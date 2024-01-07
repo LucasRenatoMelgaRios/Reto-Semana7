@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Montserrat:wght@500&display=swap');
+
+::after
+::before
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;   
+    background-color: #F2F2F2;
+
+}
+
+img{
+    width: 100%;
+}
+
+.principalContainer{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+@media (max-width: 1100px) {
+    .principalContainer {
+        grid-template-columns: 3fr;
+    }
+}
+
+
+
+.leftContainer{
+    background-color: #F2F2F2;
+    width: 413px;
+
+
+}
+
+/*----------------------CARTA----------------------------*/
+
+
+.leftContainer .cardContainer{
+
+    border-radius: 12px;
+    background: #FFF;
+    overflow: hidden;
+    padding: 23px;
+    margin-bottom: 45px;
+
+}
+
+.cardContainer .cardContainer__image{
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.cardContainer .cardContainer__text__nombre{
+
+    color: rgb(28, 24, 24);
+
+}
+
+.cardContainer .cardContainer__text__nombre h3{
+    color: #828282;
+    font-size: 1.2rem;
+}
+
+.cardContainer .cardContainer__text__contacto{
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    color: #828282;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.cardContainer .cardContainer__text__contacto img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.cardContainer .cardContainer__text__contacto .iconos{
+    margin-top: 10px;
+    
+}
+
+.cardContainer .card__descripcion{
+    line-height: 30px;
+    color: #828282;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+
+
+/*---------------------- SEGUNDA CARTA ----------------------------*/
+
+
+.experienciasContainer{
+    /* width: 100%;
+    height: auto;
+    max-height: 690px;
+    background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-height: 100vh;
+    width: 413px;
+    margin: 0 auto;
+}
+
+.experienciasContainer .experiencias__titulo{
+    /* height: 10vh;
+    background-color: blueviolet;
+    padding: 10px; */
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.experienciasContainer .experiencia{
+    height: 30vh;
+    /* background-color: bisque; */
+    margin: 5px;
+}
+
+.contenido-container{
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenido-container .experiencia{
+    display: flex;
+    margin-right: 10px;
+
+}
+
+
+.contenido-container .experiencia .experiencia__image .imagen{
+    width: 84px;
+    height: 84px;
+}
+
+.contenido-container .experiencia .experiencia__contenido{
+    margin-left: 10px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.experiencia .experiencia__contenido .experiencia__descripcion{
+    color: #828282;
+    font-weight: 100;
+}
+
+
+/*---------------------- TERCERA CARTA ----------------------------*/
+
+.hobbiesPrincipalContainer{
+    width: 413px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+.hobbiesPrincipalContainer .hobbies__titulo{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.hobbiesPrincipalContainer .hobbiesFlexContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hobbiesPrincipalContainer .hobbiesFlexContainer .imagen__hobby{
+    width: 369px;
+    height: 139px;
+    
+}
+
+.hobbiesPrincipalContainer .hobbiesFlexContainer .hobbies__contenido{
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.hobbie__descripcion{
+    color: #828282;
+    font-weight: 100;
+}
+
+
+
+/*-----------------------RIGHT CONTAINER-----------------------------*/
+
+
+
+.rightContainer .skillsFlexContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1100px) {
+    .rightContainer .skillsFlexContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skillContainer{
+    padding: 26px;
+    background-color: white;
+
+
+}
+
+
+.skill__name{
+    display: flex;
+}
+
+
+.skill__name p{
+    margin: 0 auto;
+}
+.skill__level{
+    height: 20px;
+}
+
+.skill__level progress{
+    display: block;
+}
+
+
+/*-----------------------SEGUNDO CONTAINER RIGHT CONTAINER-----------------------------*/
+
+.proyectosTitle{
+    margin-top: 30px;
+    background-color: white;
+    height: 66px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+
+}
+
+
+.proyectsMainContainer{
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    width: 1015px;
+}
+
+.proyectosGridContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+@media (max-width: 1100px) {
+    .proyectosGridContainer {
+        grid-template-columns: 3fr;
+    }
+}
+
+
+
+.proyectoImage{
+    width: 321.999px;
+    height: 274px;
+    text-align: center;
+}
+
+.proyectoImage img{
+    width: 90%;
+    height: 100%;
+    
+}
+
+.proyectoTextContainer{
+    /* background-color: aquamarine; */
+    padding: 10px;
+    line-height: 35px;
+}
+
+.proyectoTextContainer .proyectoColor{
+    color:#828282;
+    font-size: 1rem;
+}
+
+.proyectoTextContainer .proyectoColorTexto {
+    font-weight: lighter;
+    color:#828282;
+    font-size: 1rem;
+}
+
+.proyectoButtonContainer .button1 {
+    width: 136.269px;
+    height: 46px;
+    border-radius: 12px;
+    background: #2F80ED;
+    border: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.proyectoButtonContainer .button2 {
+    width: 136.269px;
+    height: 46px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #2F80ED;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 1px solid #2F80ED;
+
+}
+
+
+
+/*--------------UlTIMA CARTA-----------------*/
+
+.blogsMainContainer{
+    width: 100%;
+}
+
+.BlogsFlexContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.BlogsFlexContainer .blogImageContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tituloBlog{
+    line-height: 10px;
+    font-size: 24px;
+}
+
+.BlogsFlexContainer p{
+    font-size: 16px;
+    color:#828282
+}
+
+.BlogsFlexContainer a{
+    text-decoration: none;
+    color: #2F80ED;
+
+}
